@@ -35,6 +35,14 @@ const rideaudio = document.getElementById("ride");
 const snareaudio = document.getElementById("snare");
 const tinkaudio = document.getElementById("tink");
 const tomaudio = document.getElementById("tom");
+//mapped image id's
+const rideMap = document.getElementById("rideMap");
+const tomMap = document.getElementById("tomMap");
+const clapMapLeft = document.getElementById("clapMapLeft");
+const clapMapRight = document.getElementById("clapMapRight");
+const hihatMap = document.getElementById("hiHatMap");
+const snareMap = document.getElementById("snareMap");
+const kickMap = document.getElementById("kickMap");
 
 //Key press listeners
 document.addEventListener('keypress', (event) => {
@@ -183,4 +191,75 @@ tinkbtn.addEventListener("click", () => {
     tinkImg.style.display = "flex"
     play(tinkaudio);
     setTimeout(() => {tinkImg.style.display = "none";}, 2000);
+});
+
+hiHat.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitHiHat.style.display = "flex";
+    const hihataudio = document.getElementById("hihat");
+    play(hihataudio);
+    setTimeout(() => {revert(hitHiHat)}, 1000);
+});
+snare.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitSnare.style.display = "flex";
+    play(snareaudio);
+    setTimeout(() => {revert(hitSnare)}, 1000);
+});
+ride.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitRide.style.display = "flex";
+    play(rideaudio);
+    setTimeout(() => {revert(hitRide)}, 1000);
+});
+floorTom.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitTom.style.display = "flex";
+    play(tomaudio);
+    setTimeout(() => {revert(hitTom)}, 1000);
+});
+
+// image map listeners
+hihatMap.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitHiHat.style.display = "flex";
+    play(hihataudio);
+    setTimeout(() => {revert(hitHiHat)}, 1000);
+});
+snareMap.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitSnare.style.display = "flex";
+    play(snareaudio);
+    setTimeout(() => {revert(hitSnare)}, 1000);
+});
+rideMap.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitRide.style.display = "flex";
+    play(rideaudio);
+    setTimeout(() => {revert(hitRide)}, 1000);
+});
+tomMap.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    hitTom.style.display = "flex";
+    play(tomaudio);
+    setTimeout(() => {revert(hitTom)}, 1000);
+});
+clapMapLeft.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    clapImg.style.display = "flex";
+    play(clapaudio);
+    setTimeout(() => {revert(clapImg)}, 1000);
+});
+clapMapRight.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    clapImg.style.display = "flex";
+    play(clapaudio);
+    setTimeout(() => {revert(clapImg)}, 1000);
+});
+kickMap.addEventListener("click", () => {
+    armsUp.style.display = "none";
+    legsImg.style.display = "none";
+    kickImg.style.display = "flex";
+    play(kickaudio);
+    setTimeout(() => {revert(kickImg); legsImg.style.display = "flex";}, 1000);
 });

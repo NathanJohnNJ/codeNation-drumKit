@@ -73,7 +73,16 @@
         </div>
     </div>
     <div class="parent">
-        <img src="images/drummer.PNG" alt="Drummer" class="drummer">
+        <img usemap="#image-clickable" src="images/drummer.PNG" alt="Drummer" class="drummer">
+            <map name="image-clickable" class="drumkit">
+                <area shape="rect" coords="26,223,156,271" id="rideMap">
+                <area shape="rect" coords="44,351,192,433" id="tomMap">
+                <area shape="rect" coords="173,50,275,129" id="clapMapLeft">
+                <area shape="rect" coords="406,40,489,121" id="clapMapRight">
+                <area shape="rect" coords="508,240,591,263" id="hihatMap">
+                <area shape="rect" coords="446,371,576,412" id="snareMap">
+                <area shape="circle" coords="350,422,98" id="kickMap">
+            </map>
         <img src="images/legs.PNG" alt="Drummers legs" class="drumkit legs" id="legsImg">
         <img src="images/armsUp.PNG" alt="Drummers arms" class="drumkit armsUp" id="armsUp">
         <img src="images/hiHat.PNG" alt="Hi Hat" class="drumkit hiHat" id="hiHat">
@@ -93,6 +102,12 @@
         <img src="images/tink.PNG" alt="Tink" class="drumkit tink" id="tinkImg">
         <img src="images/nothing.PNG" alt="That key does nothing." class="drumkit nothing" id="nothingImg">
     </div>
+    <footer class="footer" id="footer">
+        <p class="playing" id="playing">You are using 'Drumkit Simulator' by NJCodes.</p>
+        <p class="portfolio" id="portfolio">If you like what you see, check out the rest of my portfolio at <a href="codes.njtd.xyz" class="github">codes.njtd.xyz</a></p>
+        <p class="portfolio" id="portfolio">You can also see what I'm currently up to on <a href="https://github.com/NathanJohnNJ" class="github">github</a></p>
+        <p class="thanks" id="thanks">Thanks for checking this out! See you again soon.</p>
+    </footer> 
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Righteous&family=Source+Code+Pro:wght@300&display=swap');
+:root{
+    --blue: #1E4E8C;
+    --grey: #D6D7DC;
+    --gold: #E4D094;
+    --darkGold: #9B7E56;
+    --black: #0A0A0C;
+}
+
 body{
     text-align: center;
     background-color: #a6a6a6;
@@ -39,28 +48,22 @@ h2{
     font-size: 45px;
     margin-bottom: -10px;
 }
-/* .first, .second, .third, .fourth{
-    margin-left: 10%;
-    margin-right: 10%;
-    display: block;
-    /* justify-content: space-evenly; */
-
 .parent{
     position: relative;
     text-align: center;
-    width: 500px;
+    width: 610px;
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
 }
 .drummer{
-    width: 500px;
+    width: 610px;
     position: relative;
     text-align: center;
 }
 .drumkit{
     position: absolute;
-    width: 500px;
+    width: 610px;
     top:0;
     left:0;
     text-align:center;
@@ -113,6 +116,29 @@ h2{
 .nothing{
     display:none
 }
+map{
+    z-index: 999;
+}
+/*------FOOTER-------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40vh;
+}
+.footer p{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 12px;
+}
+.github{
+    text-decoration: none;
+    color: var(--darkGold);
+}
+footer a:hover{
+    color: var(--black);
+}
+
+/*------MEDIA QUERIES-------*/
 @media screen and (max-width: 1028px){
     .first, .second, .third, .fourth{
         display:inline-block;
