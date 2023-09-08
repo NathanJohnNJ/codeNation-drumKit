@@ -15,6 +15,9 @@ body{
     font-family: 'Tilt Prism', cursive;
     font-size: 25px;
 }
+#title{
+    margin-bottom: -40px;
+}
 #btns{
     position: relative;
     display:flex;
@@ -46,7 +49,7 @@ body{
 h2{
     display:block;
     font-size: 35px;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
 }
 .parent{
     position: relative;
