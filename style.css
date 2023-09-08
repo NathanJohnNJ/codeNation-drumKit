@@ -13,7 +13,7 @@ body{
     background-color: #a6a6a6;
     color: #4c1ab2;
     font-family: 'Tilt Prism', cursive;
-    font-size: 35px;
+    font-size: 25px;
 }
 #btns{
     position: relative;
@@ -23,7 +23,7 @@ body{
 .button {
     width:65px;
     height: 55px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     text-justify: center;
     /* margin-left: auto;
@@ -45,8 +45,8 @@ body{
 }
 h2{
     display:block;
-    font-size: 45px;
-    margin-bottom: -10px;
+    font-size: 35px;
+    margin-bottom: -15px;
 }
 .parent{
     position: relative;
